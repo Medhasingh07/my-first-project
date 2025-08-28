@@ -1,0 +1,164 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colorful News Grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f0f8ff, #e0f7fa);
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 40px;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .grid{
+      display: flex;
+      gap:10px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+    .card{
+      flex: 1;
+      padding: 15px;
+      border-radius: 8px;
+      color: #4dd0e1;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+
+
+    }
+    .card1{background-color: #2196f3;}
+    .card2{background-color:#e91e63;}
+    .card3{background-color: #2196f3;}
+
+    .news-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .column {
+      flex: 1 1 30%;
+      min-width: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .news-box {
+      background: linear-gradient(145deg, #ffffff, #f0f0f0);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 2px solid transparent;
+    }
+
+    .news-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      border-color: #4dd0e1;
+    }
+
+    .news-box img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .news-box p {
+      padding: 16px;
+      font-size: 16px;
+      color: #333;
+      font-weight: 500;
+      text-align: center;
+      background-color: #e1f5fe;
+    }
+
+    @media (max-width: 768px) {
+      .news-columns {
+        flex-direction: column;
+      }
+    }
+    
+
+
+   
+    
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>🌐 News Updates</h2>
+    <div class="grid">
+        <div class="card card1">Sports</div>
+        <div class="card card2">Entertainment</div>
+        <div class="card card3">Global</div>
+        </div>
+    
+        
+    
+    <div class="news-columns">
+      <!-- Column 1 -->
+      <div class="column">
+        <div class="news-box">
+          <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202507/ben-stokes--shubman-gill-235238415-16x9_0.jpg?VersionId=S_Fa3bPyc3K6QGDhmYBjr0yzKhJiQINH&size=690:388"alt="Cricket">
+          <p>Ben Stokes outfoxes Shubman Gill in round 1 of captain's battle in Manchester.</p>
+        </div>
+        <div class="news-box">
+          <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202507/ravindra-jadeja-015742833-16x9_1.jpg?VersionId=_Z.edILRUHE.D.QbnU5hsIYO7tU9FQZ5&size=690:388" alt="News 2">
+          <p>ENG vs IND: Ravindra Jadeja aims for Gary Sobers' historic Test double in England</p>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="column">
+        <div class="news-box">
+          <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202507/tanvi-the-great-review-soulful-acting-marred-by-uneven-pacing--flat-execution-170101399-original-sixteen-to-nine.jpg?VersionId=JuaFEv4HB3IriA6fnAPZGhOqKnlWgMqn&size=690:388" alt="News 3">
+        
+          <p>Anupam Kher's Tanvi the Great declared tax-free in Madhya Pradesh</p>
+        </div>
+        <div class="news-box">
+          <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202507/this-one-wild-scene-in-saiyaara-is-breaking-the-internet---and-hearts-23413038-16x9_0.jpg?VersionId=sIGiXQ3WPCIfAcXkDvv.OSkRDuS91ytn&size=690:388" alt="News 4">
+          <p>This one wild scene in Saiyaara is breaking the internet - and hearts</p>
+        </div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="column">
+        <div class="news-box">
+          <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202507/there-were-43-passengers--including-five-children--and-six-crew-members-on-board-243405179-16x9_0.jpg?VersionId=VqT5pfvmx4AIFze1Jce2OczjFUrXcH0b&size=690:388" alt="News 5">
+          <p>Russian plane with 50 on board, including 5 children, goes missing: Report</p>
+        </div>
+        <div class="news-box">
+          <img src= "https://akm-img-a-in.tosshub.com/indiatoday/images/video/202507/teslacfotanejafromcorporatefinancetopoliticaltreasurer-s0-original-sixteen-to-nine.jpg?VersionId=s1bC9XiY.qJ21KjQDzgxIYX..Apaccwl&size=690:388alt="alt="News 6">
+          <p>Tesla CFO Vaibhav Taneja appointed treasurer of Elon Musk's America Party.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

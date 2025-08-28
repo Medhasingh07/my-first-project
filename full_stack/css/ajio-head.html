@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    /* navbars */
+    .navbar {
+      display:flex;
+      flex-wrap: wrap;
+      background-color: white;
+      color: white;
+      padding: 15px; 
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo  img{
+      height:40px;
+      margin-right: 20px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      font-family: Helvetica, sans-serif;
+      background-color: #fffded;;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+      height: 40px;
+      display: flex;
+      gap: 2px;
+      margin-right: 50px;
+    }
+
+    .search-bar input {
+      padding: 7px;
+      border-radius: 20px;
+      border: 1px solid black;
+      background-color:#fffded;
+      vertical-align: baseline;
+      margin-left: 3px;
+    }
+
+    .search-bar button {
+      padding: 7px 12px;
+      background-color: #f50057;
+      color:white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    /* icon section */
+    .popup-blk{
+      margin-right: 450px;
+      gap:1px;
+
+    }
+    .cart{
+      margin-right:450px;
+      gap:1px;
+    }
+
+
+    /*banner section*/
+    .banner {
+      width: 180;
+      height: 400px;
+      background-image: url("https://assets.ajio.com/cms/AJIO/WEB/D-MCS-UHP-1.0-S2-TOPBANNER-P1-5090-10072025.jpg");
+      background-size: 100% 100%;
+      background-position: center;
+    }  
+
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img height="50" width="100" src="https://assets.ajio.com/static/img/Ajio-Logo.svg">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">MEN</a></li>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">KIDS</a></li>
+        <li><a href="#">HOME & KITCHEN</a></li>
+      </ul>
+      
+    </nav>
+    <br>
+    <div class="search-bar">
+      <input type="text" placeholder="Search For Products" />
+      <button>Search</button>
+      </div>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        </div>
+
+      </div>
+      <br>
+      <div class="popup-blk wishlist-blk-icon">
+        <img height="40" width="30" src="https://assets.ajio.com/static/img/wishlistIcon.svg">
+      </div>
+  </header>
+  <section class="banner">
+  </section>
+</body>
+
+</html>

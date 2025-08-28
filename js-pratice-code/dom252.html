@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="para">hello everyone</p>
+    <div id="container"></div>
+
+
+    <button onclick="change()">Click to change </button>
+    <button onclick="add()">Click to add</button>
+    <button onclick="remove()">click to remove</button>
+
+
+    <ul id="list">
+
+      <li id="first">MANGO</li>
+      <li id="second">GRAPES</li>
+      <li id="third">LITCHI</li>
+      <li id="fourth">MEEOW</li>
+
+
+
+    </ul>
+
+
+    <script>
+
+      // function change(){
+      //   let para=document.getElementById("para");
+      //   para.innerHTML="<b>heyyy this is my js code</b>";
+      //   para.style.color="red"
+      // }
+
+
+      function add(){
+        let div=document.getElementById("container");
+        let para=document.createElement("p"); //create paragraph text
+        para.innerHTML="Hello world";//give paragrapgh text
+
+        // div.prepend(para);
+
+
+      }
+
+
+      function remove(){
+        let list=document.getElementById("list");
+        let first=document.getElementById("first");
+
+      //   list.removeChild(first);
+      // list.firstElementChild.remove();
+      list.lastElementChild.remove();
+       }
+
+
+
+
+      
+
+
+
+
+
+     
+
+
+
+      </script>
+</body>
+</html>

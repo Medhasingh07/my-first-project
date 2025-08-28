@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: verdana;
+} 
+/* navbars */
+.navbar {
+  background-color: #222;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+.search-bar input {
+  padding: 7px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.search-bar button {
+  padding: 7px 12px;
+  background-color: #f50057;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*banner section*/
+.banner {
+  height: 90vh;
+  background-image: url("https://assets.ajio.com/cms/AJIO/WEB/D-MCS-UHP-1.0-S2-TOPBANNER-P1-5090-10072025.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.banner-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.banner-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.banner-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.shop-btn {
+  padding: 10px 20px;
+  background-attachment: #ff4081;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">AJIO</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">MEN</a></li>
+          <li><a href="#">woMEN</a></li>
+          <li><a href="#">KIDS</a></li>
+          <li><a href="#">HOME & KITCHEN</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search For Products" />
+        <button>Search</button>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="banner-text">
+        <h1>Style Up with AJIO</h1>
+        <p>Flat 50% off on top brands</p>
+        <button class="shop-btn">Shop Now</button>
+      </div>
+    </section>
+  </body>
+</html>

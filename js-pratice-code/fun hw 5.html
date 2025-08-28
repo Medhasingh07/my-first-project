@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+
+    
+        function checkGrade(marks){
+            let grade="";
+            if (marks>=90){
+                grade="A++";
+            }
+            else if(marks>=80){
+                grade="A+";
+  
+            }
+            else if(marks>=70){
+                grade="A"
+            }
+            else if(marks>=60){
+                grade="B"
+
+            }
+             else if(marks>=50){
+                grade="C"
+             }
+
+                 else if(marks>=40){
+                grade="D"
+                 }
+
+                 else {
+                    grade="E"
+                 }
+                 return grade;
+                }
+                 
+
+                let marks=67;
+                let result=checkGrade(marks);
+              
+                console.log("Marks="+marks);
+                console.log("Grade="+result);
+            }
+            {
+
+           
+
+        }
+
+
+    </script>
+</body>
+</html>

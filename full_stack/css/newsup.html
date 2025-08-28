@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colorful News Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fce4ec);
+      padding: 40px 20px;
+      color: #212121;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 40px;
+      color: #d50000;
+      text-shadow: 2px 2px #ffe082;
+    }
+
+    .news-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .news-card {
+      flex: 1 1 300px;
+      border: 4px solid #ff4081;
+      border-radius: 20px;
+      background: linear-gradient(to bottom right, #fff, #ffe0f0);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .news-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid #ff4081;
+    }
+
+    .news-content {
+      padding: 16px;
+    }
+
+    .news-tag {
+      display: inline-block;
+      background-color: #ff4081;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 30px;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .news-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #c2185b;
+      margin-bottom: 10px;
+    }
+
+    .news-description {
+      font-size: 14px;
+      color: #424242;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .news-card {
+        flex: 1 1 90%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>NEWS UPDATES</h1>
+
+  <div class="news-grid">
+
+    <div class="news-card">
+          
+      <img src="https://tse3.mm.bing.net/th/id/OIP.zwI8qOxnXFagtNowbXzD2gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"alt="Cricket">
+      <div class="news-content">
+        <span class="news-tag">Sports</span>
+        <div class="news-title">India lifts World Cup 2025</div>
+        <div class="news-description">A historical win at Wankhede Stadium as India clinches the World Cup against Australia in a thrilling match.</div>
+      </div>
+    </div>
+
+   
+   
+    
+     <div class="news-card">
+          
+      <img src="https://tse3.mm.bing.net/th/id/OIP.zwI8qOxnXFagtNowbXzD2gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"alt="Cricket">
+      <div class="news-content">
+        <span class="news-tag">Sports</span>
+        <div class="news-title">India lifts World Cup 2025</div>
+        <div class="news-description">A historical win at Wankhede Stadium as India clinches the World Cup against Australia in a thrilling match.</div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="news-card">
+      <img src="https://via.placeholder.com/400x200?text=Bollywood" alt="Bollywood">
+      <div class="news-content">
+        <span class="news-tag" style="background-color:#ff6f00;">Entertainment</span>
+        <div class="news-title">Blockbuster hits theaters this Friday</div>
+        <div class="news-description">The most awaited Bollywood movie of the year is finally here with power-packed performances and songs.</div>
+      </div>
+    </div>
+
+   
+    <div class="news-card">
+      <img src="https://via.placeholder.com/400x200?text=Politics" alt="Politics">
+      <div class="news-content">
+        <span class="news-tag" style="background-color:#8e24aa;">Politics</span>
+        <div class="news-title">New Budget Released Today</div>
+        <div class="news-description">Finance Minister unveils a budget focusing on startups, youth employment, and digital infrastructure.</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+

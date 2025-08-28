@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let a=parseInt(prompt("enter number"))
+         let opt=prompt("Enter a operation");
+        switch (opt){
+            case "1":
+                add();
+                break;
+                case "2":
+                    sub();
+                    break;
+                  default:
+                    console.log("plz retry");
+
+        }
+
+        // function to calculate sum of digits
+        function add(){
+            let num=a;
+            let sum=0;
+            while(num!==0){
+                let rem =num % 10;
+                sum+=rem;
+                num=Math.floor(num/10);
+            }
+            console.log("sum of digits:",sum);
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: serif;
+            line-height: 1.5;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: aliceblue;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+        }
+        .logo{
+            display: flex;
+        }
+
+        .navbar.logo {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+
+        }
+
+        .navbar ul {
+            cursor: col-resize;
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: blueviolet;
+            font-weight: 500;
+            transition: color 0.3a ease;
+        }
+
+        .navbar a:hover {
+            color: rgb(50, 5, 156);
+        }
+
+        .hero {
+            background-image: url("https://static.vecteezy.com/system/resources/previews/021/171/699/large_2x/colorful-abstract-wallpaper-modern-background-ai-generated-photo.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            background-color: rgb(174, 157, 191);
+            border: none;
+            border-radius: 5px;
+            padding: 0.5rem 1.5rem;
+            font-size: 1.5rem;
+            color: brown;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: aquamarine;
+        }
+
+        @media(max-width:700px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .navbar ul {
+                font-display: columns;
+                gap: 0.8rem
+            }
+
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.5);
+            }
+
+            75% {
+                transform: scale(1);
+            }
+        }
+
+        .animated-btn {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><img height="50px" width="70px" src="https://static.vecteezy.com/system/resources/previews/016/830/884/large_2x/modern-demo-logo-design-file-free-vector.jpg"><h2>My Demo</h2></div>
+        <div class="nav-items">
+            <ul>
+                <li>Home</li>
+                <li>about</li>
+                <li>Services</li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam asperiores error doloribus in quae
+                quidem tenetur illum optio ex porro, voluptates iusto eligendi explicabo itaque quisquam nemo maxime
+                saepe, blanditiis reprehenderit ad repudiandae?</p>
+
+
+            <button class="animated-btn">Get Started</button>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

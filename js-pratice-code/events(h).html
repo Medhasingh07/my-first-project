@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Events Cheat Sheet</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f9; }
+    h2 { text-align: center; }
+    .section { background: white; padding: 20px; margin: 15px 0; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+    button, input { padding: 8px; margin: 5px 0; }
+    #box { width: 150px; height: 150px; background: lightblue; margin-top: 10px; text-align:center; line-height:150px; border-radius: 10px; }
+    .output { margin-top: 10px; font-weight: bold; color: #333; background: #eef; padding: 10px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+
+  <h2>🔥 JavaScript Events Cheat Sheet</h2>
+
+  <!-- Mouse Event -->
+  <div class="section">
+    <h3>1. Mouse Event</h3>
+    <button id="clickBtn">Click Me</button>
+    <div class="output" id="mouseOutput">Output: </div>
+  </div>
+
+  <!-- Keyboard Event -->
+  <div class="section">
+    <h3>2. Keyboard Event</h3>
+    <input type="text" id="keyInput" placeholder="Type something...">
+    <div class="output" id="keyOutput">Output: </div>
+  </div>
+
+  <!-- Form Event -->
+  <div class="section">
+    <h3>3. Form Event</h3>
+    <form id="myForm">
+      <input type="text" id="nameInput" placeholder="Enter name">
+      <button type="submit">Submit</button>
+    </form>
+    <div class="output" id="formOutput">Output: </div>
+  </div>
+
+  <!-- Mouse Over / Out Event -->
+  <div class="section">
+    <h3>4. Mouse Over / Out Event</h3>
+    <div id="box">Hover Me</div>
+    <div class="output" id="hoverOutput">Output: </div>
+  </div>
+
+  <!-- Window Event -->
+  <div class="section">
+    <h3>5. Window Event</h3>
+    <p>Resize the browser window 👇</p>
+    <div class="output" id="windowOutput">Output: </div>
+  </div>
+
+  <script>
+    // Mouse Event
+    document.getElementById("clickBtn").addEventListener("click", () => {
+      document.getElementById("mouseOutput").innerText = "Output: Button was clicked!";
+    });
+
+    // Keyboard Events
+    const keyInput = document.getElementById("keyInput");
+    keyInput.addEventListener("keydown", (e) => {
+      document.getElementById("keyOutput").innerText = "Output: Key down → " + e.key;
+    });
+    keyInput.addEventListener("keyup", (e) => {
+      document.getElementById("keyOutput").innerText = "Output: Key up → " + e.key;
+    });
+
+    // Form Event
+    document.getElementById("myForm").addEventListener("submit", (e) => {
+      e.preventDefault(); // prevent page reload
+      let name = document.getElementById("nameInput").value;
+      document.getElementById("formOutput").innerText = "Output: Form Submitted with name → " + name;
+    });
+
+    // Mouse Over / Out Event
+    const box = document.getElementById("box");
+    box.addEventListener("mouseover", () => {
+      box.style.background = "lightgreen";
+      box.innerText = "Mouse Over!";
+      document.getElementById("hoverOutput").innerText = "Output: Mouse entered the box";
+    });
+    box.addEventListener("mouseout", () => {
+      box.style.background = "lightblue";
+      box.innerText = "Hover Me";
+      document.getElementById("hoverOutput").innerText = "Output: Mouse left the box";
+    });
+
+    // Window Event
+    window.addEventListener("resize", () => {
+      document.getElementById("windowOutput").innerText = "Output: Window resized to " + window.innerWidth + "px width";
+    });
+  </script>
+
+</body>
+</html>

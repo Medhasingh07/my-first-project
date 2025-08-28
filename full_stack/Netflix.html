@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: black;
+            overflow-x: hidden;
+        }
+        .bg-image{
+            background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) ,url(https://springboard-cdn.appadvice.com/wp-content/appadvice-v2-media/2016/11/Netflix-background_860c8ece6b34fb4f43af02255ca8f225.jpg);
+            width: 100vw;
+            height: 833px;
+            background-size: 100% 100%;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav-items{
+            margin: 40px;
+        }
+        .nav-items select{
+            width: 120px;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+        .nav-items button{
+            background-color: red;
+            width: 100px;
+            padding: 12px;
+            border: none;
+            color: white;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+
+        .main{
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .main h1{
+            font-size: 60px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .main p{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .main input{
+            width: 30%;
+            padding: 15px;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .main button{
+            width: 130px;
+            padding: 15px;
+            border: none;
+            background-color: red;
+            border-radius: 10px;
+            color: white;
+            font-family: inherit;
+            font-size: 17px;
+        }
+
+        .carousel{
+            display: flex;
+            gap: 30px;
+            margin: 100px;
+            overflow-x: auto;
+        }
+        .carousel::-webkit-scrollbar{
+            display: none;
+        }
+
+        .carousel img{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image">
+
+        <div class="header">
+            <div class="logo">
+                <img width="300" height="140" src="https://download.logo.wine/logo/Netflix/Netflix-Logo.wine.png" alt="">
+            </div>
+
+            <div class="nav-items">
+                <select name="" id="">
+                    <option value="">English</option>
+                    <option value="">Hindi</option>
+                </select>
+                <button>Sign In</button>
+            </div>
+        </div>
+
+
+        <div class="main">
+            <h1>Unlimited movies,<br> TV shows and <br> more</h1>
+            <h3>Starts at ₹149. Cancel at any time.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership</p>
+            <input type="text" name="" id="" placeholder="Email Address">
+            <button>Get Started</button>
+        </div>
+    </div>
+
+    <h1 style="color: white;margin-left: 100px;margin-top: 70px;margin-bottom: -80px;">Trending Now</h1>
+
+    <div class="carousel">
+        <img src="https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZV4NmkRBbtoq8O_5Aro81rbq4CRwiku0decuhWlpXGKK4pGsQ9LDCWu_Yf0jv8z5goKbOMQxZ-7ZJDxzXDBbkQcobG_TzvyQsNq6FqbmzhZ-z2jB5kKb1mk6-4mwpXXdznp.jpg?r=609" alt="">
+
+        <img src="https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZV4NmkRBbtoq8O_5Aro81rbq4CRwiku0decuhWlpXGKK4pGsQ9LDCWu_Yf0jv8z5goKbOMQxZ-7ZJDxzXDBbkQcobG_TzvyQsNq6FqbmzhZ-z2jB5kKb1mk6-4mwpXXdznp.jpg?r=609" alt="">
+
+        <img src="https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABb4gKZLhdC-EVRjZLQK3urvHlgV-lANKan3WXqOpghQwCT7RHMVQPGeaudSbc64jnCVOO9sKliR5aQowrDencoRfw-S3F134nJQ.jpg?r=d95" alt="">
+
+        <img src="https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABViqdtr9ZatqPa3P9T418vFq3iq4Ma4x1JUNFKxbIS5dPSoG_5VkNoEKXKBODntJNx_mCT_z0fcGegToBNEHLaVr3qyqSGDY67I.jpg?r=062" alt="">
+
+        <img src="https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWS-EyoFBa-Svry6VvSCb6i3SN_WT20j-Iy5uiKWKH9rNk9qGhr97KLX_so6qg-EGRk5kyuXamvO6bwxx_DptuTt_iIGWIAxkoA.jpg?r=c23" alt="">
+
+        <img src="https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZ1lf1ET51x4CpItBKJ7abtNFyPfyxfTEl6N_zbQTMloiysWRBpzpK1h1YdCvoh-yxnRUiblkT5byWwwK41e_R4foRGE_ibm8YMWhp1snHf0I9thMUYGhpgLC7WCLffauO1v.jpg?r=a1c" alt="">
+
+        <img src="https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZ1lf1ET51x4CpItBKJ7abtNFyPfyxfTEl6N_zbQTMloiysWRBpzpK1h1YdCvoh-yxnRUiblkT5byWwwK41e_R4foRGE_ibm8YMWhp1snHf0I9thMUYGhpgLC7WCLffauO1v.jpg?r=a1c" alt="">
+
+        <img src="https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXiu1E3IobwEOi4dXbQMUMsvJ8I-IqxUL1F8GD2PomSU1diLa7zMgsMGjFL3ll7DrqgZ83qEsUjFacKSphxN0zjhKjrTUq6suGY.jpg?r=d66" alt="">
+
+        <img src="https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQ2lygENQ58jdDOXRdp6rTzib_Z5wBhfVumcN0GiI0PSsb8A7v_bEqis_Rm1Y_b0OrWxc3Qjv9nOUCHAhzMXdtuKul3FzbWWLFsZc9O5Vx6PcHuXpJmM7VtVr2Enrtvw2XjR.jpg?r=63b" alt="">
+
+        <img src="https://occ-0-6245-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQ2lygENQ58jdDOXRdp6rTzib_Z5wBhfVumcN0GiI0PSsb8A7v_bEqis_Rm1Y_b0OrWxc3Qjv9nOUCHAhzMXdtuKul3FzbWWLFsZc9O5Vx6PcHuXpJmM7VtVr2Enrtvw2XjR.jpg?r=63b" alt="">
+    </div>
+</body>
+</html>

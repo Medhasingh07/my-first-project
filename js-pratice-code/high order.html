@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+     // high order function 
+    // ForEach,map,reduce,filter..........(predefine)//IMPORTANT FOR INTERVIEW
+    // high order->function as arguments and also returns function.
+     
+
+
+    let num=[1,2,3,4,5];  //1
+    let sum=0;//1+2+3+4+5
+    num.forEach(n=>{  //n ->array length tk ja ra h //break and return is not used in this // triverse acc to size.
+        sum+=n;
+    })
+    console.log(sum); 
+
+
+  //map
+  let square=num.map(n=>n*n); //same kind of operation in array (like square cube .....)
+  console.log(square);
+
+let salary=[20,30,40,50,60];
+let increment=salary.map(n=>n+(n*(10/100)));  //percentage of salary 
+console.log(increment);
+
+
+// filter -return the element following the specified condition.
+
+
+let even=num.filter(n=>n%2==0)
+console.log(even);
+
+//show the names of the employees earning more than 50k
+let emp=[
+    {name:"Abc",salary:25000},
+    {name:"Xyz",salary:45000},
+    {name:"Pqr",salary:65000},
+    {name:"Otp",salary:75000},
+
+]
+ let filler=emp.filter(n=>n.salary>50000)  //for salary and name both
+ console.log(filler);
+
+ let names=filler.map(n=>n.name);// for names only 
+    console.log(names);
+
+
+    let fine=emp.filter(n=>n.salary<30000)
+    console.log(fine);
+
+    let increase=fine.map(n=>n.salary+1000);
+    console.log(increase);  // filter the salary less than 30k
+
+     //reduce -returns the single value op from the array,
+    //mostly used for aggregated operations like sum,prooduct average etc.
+    
+    //num=[1,2,3,4,5]
+    let product=num.reduce((acc,curr)=>acc*curr,1) //acc=accumulator hold the value 
+    console.log(product);
+    
+    
+   //some-returns true if atleast one element passes the condition
+   let number=[7,1,9,3,5,2,8,4,6]; 
+   let someCheck=number.some(n=>n=1);
+   console.log(someCheck);
+    // every-returns true if all the elemnts are the passing the particular condition
+   let everyCheck=number.every(n=>n=1);
+   console.log(everyCheck);
+
+//    find- return the first element that matches with the particular condition
+   let findCheck=number.find(n=>n>1)
+   console.log(findCheck);
+
+   // findIndex-returns the first element satisfying the particular condition
+   let findIndexCheck=number.findIndex(n=>n>2);
+   console.log(findIndexCheck);
+
+
+   let sorted=number.sort((a,b)=>a-b)//ascending
+   console.log(sorted); 
+   
+
+   let word=['b','n','a','j'];
+   word.sort();
+   console.log(word);
+
+//    let arr=["Vipin","Gaurav","Sneha"];
+
+//    let sortedarr=[];
+    
+//    let copiedarr=arr;
+
+//    copiedarr.forEach((n)=>{
+
+//     if(n.toLowerCase()>smallest.toLowerCase()){ //check through ascii value
+
+//         smallest=n
+//     }
+//      sortedarr.push(smallest)
+//    })
+
+
+//    copiedarr=copiedarr.filter(n=>n!==smallest)
+//    console.log(sortedarr);
+   
+
+
+  let cart = [
+  { name: "Laptop Bag", price: 500, quantity: 2, inStock: true },
+  { name: "USB Cable", price: 150, quantity: 1, inStock: false },
+  { name: "Bluetooth Speaker", price: 1200, quantity: 1, inStock: true },
+  { name: "Notebook", price: 100, quantity: 3, inStock: true },
+  { name: "Pen", price: 20, quantity: 5, inStock: false }
+];
+
+const remove=cart.filter(n=>n.inStock);
+console.log(remove);
+
+cart.map(n=>{
+
+    n.totalPrice=n.quantity*n.price;
+});
+console.log(cart);
+
+
+
+4//
+cart.map(n=>{
+
+
+    if(n.totalPrice>1000)
+    {
+        n.totalPrice=n.totalPrice=n.totalPrice*(10/100)
+    }
+})
+console.log(cart);
+
+//5 
+cart.slice(0,3)
+
+    </script>
+    
+</body>
+</html>

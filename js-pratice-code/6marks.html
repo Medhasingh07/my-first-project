@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks=[35,78,45,49,91,35];
+
+        for(let i=0;i<=marks.length-1;i++)
+        if(marks[i]<40){
+         marks.splice(i,1,"Fail");
+        }
+       console.log(marks);
+
+
+if(!marks.includes("Excellent")){
+    marks.splice(2,0,"Excellent");
+}
+    console.log(marks);
+   
+
+    
+
+
+   
+
+    </script>
+</body>
+</html>

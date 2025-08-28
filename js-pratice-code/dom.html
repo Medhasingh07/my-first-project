@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div>
+        <!-- <h1>By ID</h1>
+        <h4 id="heading">Hello everyone</h4>
+        <button onclick="changeById()">Click</button>
+        <h2 class="para">Hello</h2>
+        <button onclick="changeforQuery()">Click</button>
+    </div>
+    <script>
+        function changeforQuery(){
+            let query=document.querySelectorAll(".para");
+
+          for(let i=0;i<query.length;i++)
+          {
+            query[i].innerHTML="<i>Helooooooooooooo</i>"
+            query[i].innertext="hey";
+          }
+           
+        } -->
+          <!-- <p class="text">First paragraph</p>
+          <p class="text">Second paragraph</p>
+          <button onclick="makeItalic()">Make All Italic</button>
+          <script>
+           function makeItalic(){
+            let items=document.querySelectorAll(".text")
+            for(let i=0;i<items.length;i++)
+           {
+            
+           }
+           }
+          </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    
+    <div>
+        <h1>By Id</h1>
+
+        <h4 id="heading">Hello everyone</h4>
+        <button onclick="changeById()">Click</button>
+
+        <h1>By className</h1>
+
+        <p class="para">This is javascript class</p>
+        <p class="para">Javascript is a dynamic language</p>
+        <button onclick="changeByClass()">Click</button>
+
+        <button onclick="changeByTag()">Click for TagChnage</button>
+
+    </div>
+
+    <script>
+
+        function changeById(){
+            let head=document.getElementById("heading");
+            head.style.color="red";
+            head.style.backgroundColor="beige";
+        }
+
+        function changeByClass(){
+            let para=document.getElementsByClassName("para");
+            for(let i=0;i<para.length;i++)
+        {
+            para[i].style.fontWeight="bold";
+        }
+        }
+
+        function changeByTag(){
+            let tag=document.getElementsByTagName("h1");
+            for(let i=0;i<tag.length;i++)
+        {
+            tag[i].style.color="blue";
+        }
+
+        }
+
+        function changeforquery(){
+            let query=document.querySelectorAll(".para");
+            for(let i=0;i<query.length;i++)
+        {
+            query[i].innerHTML="<i>Abc</i>";
+        }
+        }
+    </script>
+
+
+</body>
+</html>

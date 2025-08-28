@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>user card</h2>
+    <p id="card"></p>
+    
+
+<script>
+
+
+   //datatypes
+    let name="medha";
+     let age=22;
+     let isstudent=("false");0
+     let scroll=null;
+     let email;
+     let hobbies=["reading","coding"];
+     //for printing we use $ sign
+
+     let card=`Hi I'm  ${name}, I'm  ${age} years old and my hobbies are  ${hobbies}`;
+
+     document.getElementById('card').innerHTML=card;
+
+
+    console.log(name);
+    console.log(age);
+    console.log(isstudent);
+    console.log(scroll);
+    console.log(email);
+    console.log(hobbies);
+
+
+    //operators
+    //assignment operator
+    var a=1;
+    var b=2;
+    console.log(a+b);
+
+    let arr=[10,20,30,40,50];
+    console.log(arr.at(-2));
+
+
+//   for printing variable throungh function
+    let $name="raj";
+    function $log(msg){
+        console.log(msg);
+    }
+    $log($name);
+    
+    // uppercase and lower case
+
+    let Name="mee";
+    console.log(name.toUpperCase());
+    console.log(name.toLowerCase());
+
+    // map
+    let nums=[1,2,3];
+    let cube=nums.map(n => n*n*n);
+    console.log(cube);
+
+    // area of circle
+    {
+    let r=5;
+    let area=3.14 * r * r ;
+    console.log("Area of circle is :" + area);
+
+    }
+    // area of square
+
+    let side=5;
+
+    let area= side*side;
+    
+    console.log("Area of square is:"+ area);
+
+    // area of perimeter
+
+
+
+
+    // operator
+    // let a=2;
+    // let b=2;
+    // let c=3;
+    // console.log();
+    // console.log();
+    // 
+
+
+
+    // typeof means what is the datatype of a variable :
+{
+
+
+    let g=8
+    let f=18
+
+    typeof(g)
+    typeof(f)
+
+    let c=0;
+    c=c+g
+
+    console.log(g+f);
+    console.log(c);
+}
+
+
+{
+
+
+    let c=1;
+    console.log(++c);//2
+    console.log(c);//2
+   
+     console.log(c++);//2
+     console.log(c++);//3
+}
+// 
+
+{
+    let a=8;
+    let b=18;
+    let c=1;
+
+    let l=c&a;
+    console.log(l);
+
+    let  left=5<<1
+    console.log(left);
+}
+
+//
+{
+    let age=23
+    
+    isnotabsent=true;
+
+if(age>18 & isnotabsent)
+{
+    console.log("eligible for exam ");
+
+}
+
+else{
+    console.log("not eligible for exam");
+}
+}
+// if-else-if
+
+{
+    let age=23
+
+    isabsent="true";
+    if(age<18)
+{
+    console.log("not eligible");
+
+}
+  else{
+    if(isabsent){
+        console.log("eligible after submitting application form");
+    }
+    
+        else{
+    console.log("eligible");
+  }
+
+    }
+}
+// switch-case;
+{
+
+
+let fruit="apple";
+switch(fruit){
+   
+     case "apple":
+        console.log("apple is red");
+        break;
+
+         case "banana":
+        console.log("banana are yellow");
+        break;
+
+         case "litchi":
+        console.log("litchi is pink");
+        break;
+
+         case "guava":
+        console.log("guava is green");
+        break;
+        default:
+            console.log("unknown fruit");
+
+
+}
+}
+
+// 
+
+
+
+
+
+
+
+
+let x=1;
+let m=2;
+let operator="-";
+switch(operator){
+    
+    case "+":
+    console.log(x+m);
+    break;
+    case "-":
+    console.log(x-m);
+    break;
+    case "*":
+    console.log(1*2);
+    break;
+
+    case "/":
+    console.log(1/2);
+    break;
+    case "%":
+    console.log(1%2);
+    break;
+    default:   
+    console.log("mathematical error");
+
+}
+    
+// {
+//     let number=7;
+
+//     if(number % 2 == 0){
+//        console.log(number + "is even");
+//     } else {
+//         console.log(number + "is odd");
+//     }
+// }
+
+
+    let num=5;
+    for(i=1;i<=20;i++){
+    
+
+    if(num %2 ==0){
+        console.log(num + "is even");
+    }
+
+}
+
+
+</script>
+</body>
+</html>

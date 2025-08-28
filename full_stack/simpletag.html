@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: inline-block;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        div{
+            height: 150px;
+            width: 200px;
+            border: 2px solid black;
+        }
+
+            #box1{
+            position: relative;
+            top: 50px;
+        }
+
+        #box2{
+
+            position: absolute;
+            top:100px;
+            left: 20px;;
+        }
+        #box3{
+            position: sticky;
+            top:0px;
+            left:20px;
+        }
+
+        #box4{
+            position: fixed;
+            top:0px;
+
+        }
+    </style>
+</head>
+
+    </style>
+
+</head>
+<body>
+    <div class="parent">
+
+    <div id="box1" style="background-color: brown;">box1</div>
+    <div id="box2" style="background-color: black">box2</div>
+     <div id="box3" style="background-color: aquamarine;">box3</div>
+    <div id="box4" style="background-color:purple;">box4</div>
+    </div>
+</body>
+</html>

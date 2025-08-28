@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //objects- it is collection of key values pairs it is no primitive datatype,
+
+        let student= {
+            name:"Abc",
+            age:25,
+
+        };
+        console.log(student["name"]);  1// two types of acessing object in square brack when we key value have any special character
+        console.log(student.age);//2
+
+
+
+        let person={
+            name:"geeta",
+            age:30,
+            course:"Full Stack"
+        };
+        console.log(person["name"]);
+        for(let i in person){
+            console.log(`${i}:  ${person[i]}`);
+        };
+        
+        console.log(Object.keys(person)); // we use object for array (object to array)
+        console.log(Object.values(person));
+        console.log(Object.entries(person));
+
+
+        let Student ={
+            name:"Abc",
+            age:22,
+            subject:["Java","JS","Python" ],
+            marks:{
+                Java:86,
+                JS:90,
+                Python:98
+            },
+            greet:function(){
+               return `hiiii meeow this is ${this.name}`
+            }
+
+        }
+
+        console.log(Student.greet());
+        
+        //  console.log(Student.marks.Python);// . means inside  
+
+       
+    
+
+
+       
+
+
+
+
+       
+
+    </script>
+</body>
+</html>

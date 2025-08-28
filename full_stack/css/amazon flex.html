@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini shopping page</title>
+    <style>
+    .card{
+            box-shadow: 0 0 10px 5px gray;
+            padding:5px;
+            border-radius:10px;
+            width:320px;
+            margin:auto;
+    }
+    .card-header{
+            text-align:center;
+            background-color:gray
+        }
+    
+    .parent{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+    .card{
+        width:300px;
+        background-color: white;
+        box-shadow:0 0 10px 5px rgba(0, 0, 0, 0.1);
+        border-radius:10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .card img{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        background-color: #f4f4f4;
+    }
+    
+      .card-body{
+        padding: 15px;
+    }
+    .card-body p{
+        margin:5px 0;
+
+    }
+    .bi-star-fill,.bi-star {
+        color: goldenrod;
+    }
+    .price{
+        font-size: 22px;
+        font-weight: bold{
+        }
+        
+
+    }
+    .mrp{
+        color: gray;
+        font-size: 14px;
+    }
+    .card-footer button{
+        background-color: gold;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .card-footer button:hover{
+        background-color: darkgoldenrod;
+        color:white;     
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <h2 style="text-align: center;
+    margin-bottom: 20px;">Featured products</h2>
+    <div class="parent">
+        <!--productt 1-->
+        <div class="card">
+         <img src="https://m.media-amazon.com/images/I/61gVQJ5Yy0L._SX679_.jpg">
+        <div class="card-body">
+            <p style="color:gray">Sponsored <i class="bi bi-info-circle"></i></p>
+            <h4>Samsung Galaxy Tab A9+ [Smartchoice], 27.94 cm (11.0 inch) Display, RAM 8 GB, ROM 128 GB Expandable, Wi-Fi Tablet, Gray</h4>
+            <div class="stars">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-chevron-compact-down"></i>
+        </div>
+        <p class="price">&#8377;25,990</p>
+        <p class="mrp">M.R.P:<del>&#8377;37,0990</del>(30% off)</p>
+        <p>FREE delivery by <b>16 JUL</b></p>
+        </div>
+        <div class="card-footer">
+            <button>ADD TO CART</button>
+            </div>
+        </div>
+        <!--product2-->
+        <div class="card">
+            <img src ="https://m.media-amazon.com/images/I/418YPhyOIhL._SX300_SY300_QL70_FMwebp_.jpg">
+            <div class="card-body">
+            <p style="color:gray">Sponsored <i class="bi bi-info-circle"></i></p>
+            <h4>Lenovo Tab Plus with Octa JBL Hi-Fi Speakers| 8 GB RAM, 128 GB ROM| 11.5 Inch, 2K, 90 Hz Refresh| Wi-Fi Tablet| Android 14| 45 W Fast Charger| Built-in Kickstand| Color: Luna Grey</h4>
+            <div class="stars">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+    
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-chevron-compact-down"></i>
+        </div>
+        <p class="price">&#8377;25,990</p>
+        <p class="mrp">M.R.P:<del>&#8377;32,000</del>(30% off)</p>
+        <p>FREE delivery by <b>15 JUL</b></p>
+        </div>
+        <div class="card-footer">
+            <button>ADD TO CART</button>
+            </div>
+        </div>
+<!--Product3-->
+<div class="card">
+    <img src="https://m.media-amazon.com/images/I/71XIM211EkL._AC_UY327_FMwebp_QL65_.jpg">
+    <div class="card-body">
+            <p style="color:gray">Sponsored <i class="bi bi-info-circle"></i></p>
+            <h4> GrayRedmi Pad 2, Active Pen Support, 27.94cm(11") Model, 2.5K Sharp & Clear Display, 4GB, 128GB, All Day & More 9000mAh Battery, AI-Enabled, Dolby Atmos, HyperOS 2, Graphite Grey</h4>
+            <div class="stars">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-chevron-compact-down"></i>
+        </div>
+        <p class="price">&#8377;25,990</p>
+        <p class="mrp">M.R.P:<del>&#8377;37,0990</del>(30% off)</p>
+        <p>FREE delivery by <b>12 JUL</b></p>
+        </div>
+        <div class="card-footer">
+            <button>ADD TO CART</button>
+            </div>
+        </div> 
+        <!--product4-->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61l5a94VKkL._SX355_.jpg">
+            <div class="card-body">
+                <p style="color:gray">Sponsored <i class="bi bi-info-circle"></i></p>
+            <h4> GrayRedmi Pad 2, Active Pen Support, 27.94cm(11") Model, 2.5K Sharp & Clear Display, 4GB, 128GB, All Day & More 9000mAh Battery, AI-Enabled, Dolby Atmos, HyperOS 2, Graphite Grey</h4>
+            <div class="stars">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-chevron-compact-down"></i>
+        </div>
+        <p class="price">&#8377;25,990</p>
+        <p class="mrp">M.R.P:<del>&#8377;37,0990</del>(30% off)</p>
+        <p>FREE delivery by <b>12 JUL</b></p>
+        </div>
+        <div class="card-footer">
+            <button>ADD TO CART</button>
+            </div>
+        </div> 
+        <!--product5-->
+        <div class="card">
+            <img src="https://www.amazon.in/Lenovo-Smartchoice-AI-Enabled-MediaTek-Dimensity/dp/B0DZCC8QZW/ref=sr_1_17?crid=2RKQGX1739SD1&dib=eyJ2IjoiMSJ9">
+
+</body>
+</html>

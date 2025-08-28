@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //OOP
+        //constructor function
+        function Person(firstName,lastName,dob){
+            //set object properties
+            this.firstName=firstName;
+            this.lastName=lastName;
+            this.dob= new Date (dob);
+            // set to actual date object using date constructor
+            this.getBirthYear=function(){
+                return this.dob.getFullYear();
+            }
+             this.getFullName=function(){
+                return `${this.firstName}  ${this.lastName}`;
+             }
+        }
+        // Get Birth Year
+        Person.prototype.getBirthYear=function(){
+            return this.dob.getFullYear();
+        }
+        // Get Full Name
+        Person.prototype.getFullName=function(){
+            return `${this.firstName}  ${this.lastName}`;;
+        }
+
+
+
+        //ES6 CLASSES
+        class pix{
+             constructor(firstName,lastName,dob){
+            this.firstName=firstName;
+            this.lastName=lastName;
+            this.dob= new Date (dob);
+             }
+             getBirthYear(){
+                return this.dob.getFullYear();
+             }
+             getFullName(){
+                 return `${this.firstName}  ${this.lastName}`;
+             }
+        }
+
+
+
+        
+
+        //instantiate  an object from the class
+        const person1=new Person('medha','singh','10-09-1997');
+
+          const person2=new Person('shruti','singh','10-09-1990');  
+
+          const person3=new Person('yami','singh','10-09-1997');
+
+          console.log(person2.firstName,person2.lastName);
+
+
+          console.log(person2.dob.getFullYear());
+          console.log(person3.dob.getFullYear());
+
+        console.log(person1.getBirthYear());
+         console.log(person1.getFullName());
+
+
+
+        console.log(person1)
+        
+
+
+
+
+    </script>
+</body>
+</html>

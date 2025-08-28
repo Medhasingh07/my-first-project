@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+
+  <script>
+    // Create an element
+    const newDiv = document.createElement("div");
+
+    // Add text inside it
+    newDiv.textContent = "Hello, I am a new div!";
+
+    // Add style
+    newDiv.style.color = "blue";
+
+    // Append it to container
+    document.getElementById("container").appendChild(newDiv);
+  </script>
+</body>
+</html>

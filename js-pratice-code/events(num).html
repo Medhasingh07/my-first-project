@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Student marks calculate</h2>
+    <h3>student1</h3>
+    <input type="number" id="s1">
+    <br>
+    <h3>student2</h3>
+    <input type="number" id="s2">
+    <br>
+     <h3>student3</h3>
+    <input type="number" id="s3">
+    <br>
+
+<button onclick="calculate()">Calculate</button>
+
+  <h3>Result:</h3>
+
+  <p id="avg"></p>
+
+  <p id="top"></p>
+
+<script>
+
+    function calculate() {
+    
+      let m1 = Number(document.getElementById("s1").value);
+      let m2 = Number(document.getElementById("s2").value);
+      let m3 = Number(document.getElementById("s3").value);
+
+
+      let average=(m1+m2+m3)/3;
+
+
+       let topper=Math.max(m1,m2,m3);
+
+       document.getElementById("avg").innerText = "Average Marks: " + average;
+      document.getElementById("top").innerText = "Topper Marks: " + topper;
+
+      
+    }
+
+
+    </script>
+    
+
+
+
+    
+
+</body>
+</html>

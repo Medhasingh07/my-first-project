@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body id="body">
+
+
+    <form id="form">
+        <input type="text" id="name" placeholder="enter the name">
+        <input type="number" id="age" placeholder="enter the age">
+
+          <input type="submit" value="Submit">
+
+    </form>
+
+    <p id="msg"></p>
+
+    <script>
+        let form=document.getElementById("form");
+        let msg=document.getElementById("msg");
+        form.addEventListener("submit",function(e)
+        {
+            e.preventDefault();
+
+            let name=document.getElementById("name").value;
+            let age=document.getElementById("age").value;
+            if(name.trim()=="")
+        {
+            msg.innerHTML="please enter the name"
+        }
+         
+        else if(age.trim()=="")
+        {
+            msg.innerHTML="please enter the age"
+        }
+
+        else{
+            alert(`hello ${name}`);
+            msg.innerHTML="hello,welcome againnn"
+        }
+        } )
+        
+        
+    </script>
+</body>
+</html>

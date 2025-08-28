@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Playground</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #f4f4f4;
+    }
+    h1 {
+      color: #333;
+    }
+    #box {
+      width: 150px;
+      height: 150px;
+      background: #3498db;
+      margin: 20px auto;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    #tooltip {
+      display: none;
+      margin-top: 10px;
+      color: #555;
+      font-size: 14px;
+    }
+    input {
+      padding: 8px;
+      margin-top: 20px;
+      width: 200px;
+    }
+    #preview {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎨 Event Playground</h1>
+  <p>Try clicking, hovering, typing, and more!</p>
+
+  <div id="box"></div>
+  <p id="tooltip">You are hovering over the box ✨</p>
+
+  <p id="keypress">Press any key...</p>
+
+  <input type="text" placeholder="Type something...">
+  <p id="preview"></p>
+
+  <script>
+    const box = document.getElementById("box");
+    const tooltip = document.getElementById("tooltip");
+    const keypress = document.getElementById("keypress");
+    const input = document.querySelector("input");
+    const preview = document.getElementById("preview");
+
+    // Click → change background color
+    box.addEventListener("click", () => {
+      const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+      box.style.background = randomColor;
+    });
+
+    // Double click → enlarge/shrink
+    box.addEventListener("dblclick", () => {
+      box.style.transform = 
+        box.style.transform === "scale(1.5)" ? "scale(1)" : "scale(1.5)";
+    });
+
+    // Mouse over/out → show tooltip
+    box.addEventListener("mouseover", () => tooltip.style.display = "block");
+    box.addEventListener("mouseout", () => tooltip.style.display = "none");
+
+    // Key press → show which key
+    document.addEventListener("keydown", (e) => {
+      keypress.textContent = `You pressed: ${e.key}`;
+    });
+
+    // Input → live preview
+    input.addEventListener("input", () => {
+      preview.textContent = `Preview: ${input.value}`;
+    });
+  </script>
+
+</body>
+</html>

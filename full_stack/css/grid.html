@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layout{
+            display: grid;
+            grid-template-areas:
+            "header header"
+            "menu1 menu2"
+            "footer footer";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 60px 400px 60px;
+            height: 300px;
+            gap: 8px;
+            max-width: 600px;
+            margin: auto;
+            text-align: center; 
+
+        }
+        div{ 
+            border: 2px solid black;
+
+        }
+        .header{
+            grid-area: header;
+            background-color: olive;
+        }
+        .menu1{
+            grid-area: menu1;
+            background-color: purple;
+
+        }
+        .menu2{
+            grid-area: menu2;
+            background-color: red;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: orchid;
+        }
+        </style>
+        <!-- /* 
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: pink;
+            margin-right: auto;
+            padding: auto;    
+            height: 300px;
+            width: 200px;
+
+        } */
+        /* .span2{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 100px;
+            margin: 10px auto;
+         }
+         .grid-span>div{
+            display: grid;
+            text-align: center;
+         }
+         .span2{
+            grid-column:span 2;
+           background-color: pink;
+
+         }
+         p{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: blueviolet;
+         } */
+        /* .grid-span {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 100px;
+            margin: 10px auto;
+            border: 2px solid purple;
+            height: 200px;
+            width: 200px;
+        }
+
+
+        .grid-span>div {
+            display: grid;
+            text-align: center;
+        }
+
+        .span2 {
+            grid-column: span 2;
+            background-color: pink;
+        }
+
+        .span3 {
+            background-color: gold;
+        }
+        p{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: pink;
+
+        }
+        
+</head>
+
+<body>
+    <p>A div to just for grid</p>
+    <br>
+    <<div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+
+    </div> -->
+
+    <!-- <div class="grid-span">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="span2">4</div>
+        <div>5</div>
+        <div>6</div>
+    </div> -->
+    <!-- <div class="grid-span">
+        <div class="span2">Header</div>
+        <div class="span3">Main</div>
+        <div class="span3">Main</div>
+        <div class="span2">Footer</div>
+    </div> */
+
+    </div> --> 
+
+     <div class="layout">
+
+    <div class="header">header</div>
+    <div class="menu1">menu1</div>
+    <div class="menu2">menu2</div>
+    <div class="footer">footer</div>
+
+    </div>
+
+
+</body>
+
+</html>

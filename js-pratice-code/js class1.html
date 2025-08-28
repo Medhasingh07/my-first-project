@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // {  //array
+        //     const fruits = ["banana", "mango", "apple"];
+
+        //     fruits.push("gauva");
+
+        //     fruits.pop("mango")
+
+
+        //     console.log(fruits.includes("mango"))
+        //     console.log(Array.isArray('apple'));
+
+        //     console.log(fruits.indexOf("apple"))
+
+        //     console.log(fruits)
+
+        // }
+        // const person = {
+        //     firstName: 'yomi',
+        //     lastName: 'kick',
+        //     age: 20,
+        //     hobbies: ['music', 'movies', 'dance'],
+        //     address: {
+        //         city: 'london',
+        //         state: 'MA'
+        //     }
+        // }
+        // console.log(person.firstName ,person.lastName,person.age);
+        // console.log(person.hobbies[2])
+
+
+        //    const { firstName, lastName, address:{city}}=person;
+
+
+        // person.email = 'medhassss@gmail.com',
+        //     console.log(person.email)
+        //    console.log(lastName)
+
+
+
+
+        const todo = [
+            {
+                id: 1,
+                text: 'meeting with boss',
+                isCompleted: true
+            },
+
+
+
+            {
+                id: 2,
+                text: "js complete",
+                isCompleted: true
+            },
+
+            {
+                id: 3,
+                text: 'homework',
+                isCompleted: false
+            }
+
+        ];
+        // console.log(todo[1].text)
+
+
+    //     const todoJSON=JSON.stringify(todo);
+    //     console.log(todoJSON)
+    // for(let i=0;i<todo.length;i++){
+    //     console.log(todo[i].text);
+        // }
+  for(let  t of todo){
+    console.log(t.text);
+  }
+  for(let  t of todo){
+    console.log(t.id);
+  }
+    </script>
+</body>
+
+</html>

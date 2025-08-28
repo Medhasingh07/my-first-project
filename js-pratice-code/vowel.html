@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // count vowel
+
+         function  countVowels(str){
+                let count=0; 
+                let vowels="aeiouAEIOU";
+                for(let i=0;i<str.length;i++){
+
+                    if(vowels.includes(str[i])){
+
+                   count++;
+                    }
+                }
+               return count;
+            }
+            console.log("contains vowel in string is:");
+            console.log(countVowels("medhasingh"));
+
+        // factorial of any number 
+
+        function findFactorial(n){
+            let num=1;
+            for (let i=1;i<=n;i++){
+                num*=i;
+            }
+            return num;
+        }
+        console.log("factorial of 5");
+        console.log(findFactorial(5));
+        console.log("factorial of 6");
+        console.log(findFactorial(6));
+        
+    </script>
+</body>
+</html>

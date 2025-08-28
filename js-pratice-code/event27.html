@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <p style="background-color: #2c6698;">
+        onClick
+        ondblClick
+
+        onmouseover
+        onmouseout
+
+        onkeydown
+        onkeyup
+
+        onsubmit
+        
+        onchange
+
+        onload
+
+
+    </p> -->
+
+    <h2>some events</h2>
+    <button id="click"> click</button>
+    <p id="para"></p>
+    
+    <!-- <form id="myform">
+      <input type="text" id="name" placeholder="Enter the name" />
+      <input type="password" id="password" placeholder="Enter the password" />
+      <p id="message" style="color: red"></p>
+
+      <input type="submit" value="Submit">
+    </form> -->
+</body>
+<script>
+    let button=document.getElementById("click")
+    button.addEventListener("click" ,function(){
+        // alert("give me some money");
+        document.body.style.backgroundColor="#"+Math.floor(Math.random()*16777216).toString(16);//to generate random colors
+         document.body.style.Color="white";})
+
+    // let para=document.getElementById("para")
+    // let input=document.getElementById("input")
+    // input.addEventListener("keydown",function(e){  // e denoted the event // we can put thr paremater on documant or body or anything
+    // para.innerHTML=you have passed ${e.key}
+    // })
+
+    // let form = document.getElementById("myform");
+    // let msg = document.getElementById("message");
+      
+    // form.addEventListener("submit", function(e) {
+    //   let name = document.getElementById("name").value.trim();
+    //   let pwd = document.getElementById("password").value.trim();
+      
+    //   console.log(name);
+    //   console.log(pwd);
+    //   console.log(name);
+      
+
+    //     e.preventDefault();//prevents the default behaviour of form refreshing the data after submission
+    //     if (name == "") {
+    //       msg.innerText = "Name is mandatory";
+    //     }
+    //     else if (pwd == "") {
+    //       msg.innerText = "Password is mandatory";
+    //     }
+    //     else{
+    //         alert(`Hello ${name}`);
+    //     msg.innerText=`Hello ${name}`
+    //     }
+    //   });
+    
+
+
+</script>
+</html>

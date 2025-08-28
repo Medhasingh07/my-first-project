@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let fruit=["Apple","Banana","Guava","Pineapple","Litchi"];
+    console.log(fruit[0]);
+     
+
+    fruit.push("Mango") //add at the end
+    console.log(fruit);
+
+    fruit.pop();    // remove at the end
+    console.log(fruit);
+
+    fruit.shift(2);  //remove from the starting
+    console.log(fruit);
+
+    fruit.unshift("Beeries");  //add  from the starting 
+    console.log(fruit);
+
+
+    console.log(fruit.length);
+
+
+    // includes whether a particular elemenent is present or not//
+     
+
+
+    console.log(fruit.includes("Banana")); //true or false
+   
+    console.log(fruit.indexOf("Banana"));
+
+    console.log(fruit.join(','));  //join  elements
+
+    let sliced=fruit.slice(1,5);
+    //extract part of the array without changing actual array
+    console.log(sliced);
+    console.log(fruit);
+
+    // splice
+    // add or remove elements ->original array mai changes krta h 
+
+    fruit.splice(1,2)// startIndex,deletecount=>remove
+    console.log(fruit);
+
+    fruit.splice(1,0,"Kiwi")//startIndex,deleteCount,Values to add
+    console.log(fruit);
+
+
+    // high order function 
+    // ForEach,map,reduce,filter..........(predefine)//IMPORTANT FOR INTERVIEW
+    // high order->function as arguments and also returns function.
+     
+
+
+    let num=[1,2,3,4,5];
+    num.forEach(n=>{
+        sum+=n;
+    })
+    console.log(sum);
+
+
+    </script>
+    
+</body>
+</html>
